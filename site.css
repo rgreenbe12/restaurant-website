@@ -1,0 +1,325 @@
+/* css reset */
+
+html, body {
+    margin:0;
+    padding:0;
+    font-size:100%;
+}
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#navwrapper {
+	/*margin-bottom: 10em;*/
+}
+
+header {
+	text-align: center;
+	font-size: 2em;
+}
+
+nav {
+	text-align: center;
+}
+
+nav ul {
+	padding: 0;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+nav li {
+	list-style-type: none;
+	margin: 0.3em;
+	padding: 0.4em;
+}
+
+#slideshow {
+	width: 100%;
+	background-color: blue;
+	height: 400px;
+	top: 0px;
+}
+
+
+figure {
+	background-color: yellow;
+	height: 210px;
+	/*width: 100%;*/
+	margin: 0;
+	padding: 0;
+	/*margin: 1em 1em;
+	padding: 0 1em;*/
+}
+
+/*#delivery {
+	background-color: yellow;
+	
+}* /*IN SEPARATE RESERVATIONS_ONLINE_ORDERING.HTML FILE*/
+
+/*#reserve {
+	background-color: grey;
+	padding-top: 3%;
+}*/ /*IN SEPARATE RESERVATIONS_ONLINE_ORDERING.HTML FILE*/
+
+#menu {
+	padding: 3%;
+	clear: both;
+	margin: 4%;
+	font-size: 3em;
+	text-decoration: underline;
+	text-align: center;
+}
+
+/*#press {
+height: 1400px;
+background-color: orange;
+}
+
+#pressfigure {
+	height: 650px;
+	background-color: pink;
+	margin: 0;
+	padding: 0;
+}
+
+#presstext {
+	margin: 0;
+	padding: 0;
+}*/ /*MOVED TO PRESS.css*/
+
+#visit {
+	
+	/*display: block;*/
+	margin-top: 50px;
+	background-color: green;
+}
+
+/*.map {
+	height: 500px;
+	background-color: red;
+}
+
+.form {
+		background-color: pink;
+		height: 500px;
+}*/ /*MOVED TO CONTACT-MAP.CSS*/
+}
+
+
+/* for small tablet*/
+@media screen and (min-width: 641px){
+
+/*#pressfigure {
+	
+	float: left;
+	width: 49%;
+	
+}
+
+#presstext {
+	float: right;
+	width: 49%;
+}*/ /*MOVED TO PRESS.CSS*/
+
+}
+
+/*for tablet*/
+@media screen and (min-width: 768px){
+
+header {
+	font-size: 3em;
+}
+
+nav li {
+	display: inline-block;
+	padding: 1em;
+	/*margin-right: 1em;*/
+	background-color: green;
+	width: 5%;
+}
+
+#slideshow {
+	height: 700px;
+	position: absolute;
+	top: 0px;
+	z-index: -2;
+}
+
+#about-container { /*sets width of wrapper for about contents and centers the content*/
+	margin-top: 500px;
+	background-color: orange;
+	height: 350px;	
+}
+
+figure {
+	margin: 1em;
+	padding: 1em;
+}
+
+#aboutfigure {
+	width: 40%;
+	max-width: 454px;
+	/*padding: 1em;*/
+	float: left;
+	padding-left: 1em;
+}
+
+#about {
+	width: 47%;
+	max-width: 497px;
+	float: right;
+	padding-right: 1em;
+}
+
+#history-press-location {
+	clear:both;
+	padding-bottom: 5em;
+	/*padding-left: 5em; /*aligns left side with the about section*/
+	background-color: purple;
+	height: 500px;
+	display: block;
+	/*padding-left: 3%;*/
+	
+}
+
+.figurecontainer {
+	width: 29.1%;
+	float: left;
+	margin-top: 1em;
+	margin: 2%;
+	padding-top: 0; /*adds space between this and next "reserve" section*/
+	background-color: green;
+}
+
+.image {
+	margin: 0 1em;
+	padding: 0 1em;
+	background-color: pink;
+	height: 300px;
+}
+
+caption {
+	margin: 0 1em;
+	padding: 0 1em;
+
+}
+
+/*#reserve-delivery {
+	margin-top: 150px;
+	clear: both;
+	width: 80%;
+	margin: 0 auto;
+}
+
+#delivery {
+	padding: 4em;
+	width: 30%;
+	float: left;
+}
+
+
+#reserve {
+	padding: 4em;
+	width: 30%;
+	float: left;
+}
+
+#reserve p {
+	margin: 0 auto;
+}*/ /*IN SEPARATE RESERVATIONS_ONLINE_ORDERING.HTML FILE*/
+
+
+#location1 {
+	float: left;
+	width: 50%;
+}
+
+#location2 {
+	float: right;
+	width: 50%;
+}
+/*
+#map-form {
+	margin-top:450px;
+	
+}
+#map1 {
+	width: 40%;
+	float: left;
+	margin: 2%;
+}
+#map2 {
+	width: 40%;
+	float: right;
+	margin: 2%;
+	position: relative;
+	top: -550px;
+}
+
+#form1 {
+	clear: both;
+	float: left;
+	width: 40%;
+	margin: 2%;
+}
+
+#form2 {
+	float: right;
+	width: 40%;
+	margin: 2%;
+	position: relative;
+	top: -550px;
+}*/ /*MOVED TO CONTACT-MAP.CSS*/
+
+footer {
+	clear: both;
+	background-color: black;
+	height: 300px;
+}
+}
+
+ /*end for tablet*/
+
+
+/* following style for desktop*/
+
+
+@media screen and (min-width: 1080px){
+
+
+#about-container{ /*centers wrapper for about-figure and p inside the div tabletsection*/
+	min-width: 1079px;
+	max-width: 56%;
+	margin: 0 auto;
+}
+
+#aboutfigure {
+	min-width: 454px;
+}
+
+#about {
+	min-width: 497px;
+	float: right;
+}
+
+
+#history-press-location {
+	min-width: 1079px;
+	max-width: 56%;
+	margin: 0 auto;
+}
+
+/*#press {
+	max-width: 1080px;
+	margin: 0 auto;
+}*/ /*MOVED TO PRESS.CSS*/
+}
+
+
+
+
+
+

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/menu-practice.css">
+  <script>
+  </script>
+</head>
+<body>
+  <h1>MENU</h1>
+
+  <section id="menu">
+
+<div class="menu">
+  <nav id="menu-nav top">
+      <ul>
+        <li><a href="#soups">Soups</a></li>
+        <li><a href="#salads">Salads</li>
+        <li><a href="#plates">Plates</li>
+        <li><a href="#desserts">Desserts</li>
+      </ul>
+  </nav>
+</div>
+
+    
+    <div id="cart"><!--the cart initial display: none-->
+      <table><thead><tr><th>Item</th><th>Quantity</th><th>Item Total</th></tr></thead><tbody id="totalbody"></tbody>
+        <tfoot><tr><th id="totalordername"></th><th id="totalordervalue"></th></tr></tfoot></table>
+    </div>
+    <button id="showcartbutton" onclick="showCart()">Show Cart</button></div><!--show cart button-->
+  <a class="back_to_top" href="#top">TOP</a><!--back to top-->
+    
+<br><br><br><br>
+    <div class="menu-col-group" id="soups"><!--soups div-->
+      <h2 id="soups">SOUPS</h2><br><!--id is for internal link from menu categories-->
+
+      <div class="item" id="humanese"><!--the class is the same for all divs, and the id is different for each div bc it gives us information about each individual menu item-->
+        <h3><span class="name">Humanese (Living Food)</span><span class="cost">13</span><!--item name and cost-->
+          <button onclick ="addItemToCartById('humanese')">Add To Cart</button><!--add to cart-->
+        </h3>
+        <input type="number" class="quantity" value="0"></input><!--specify quantity-->
+        <p>light savory cilantro-flax broth over diced coconut and avocado. topped with flax crisps.</p>
+      </div>
+
+
+      <div class="item" id="yellowsoup">
+        <h3><span class="name">Yellow Noodle Soup</span><span class="cost">17</span>
+          <button onclick="addItemToCartById('yellowsoup')">Add To Cart</button>
+        </h3>
+        <input type="number" class="quantity" value="0"></input>
+        <p>shiitake mushroom broth, wheat noodles, soy chicken, shrimp, baby bok choy, jicama and mushroom wontons, brown onion, chives, cilantro</p>
+      </div>
+
+
+      <div class="clear item" id="superfoods">
+        <h3><span class="name">Superfoods (Living Food)</span><span class="cost">13</span>
+          <button onclick="addItemToCartById('superfoods')">Add To Cart</button>
+        </h3>
+        <input type="number" class="quantity" value="0"></input>
+        <p>creamy spirulina broth, tomato, macadamia cream, dulse, onion, ginger, chlorella, scallions, saw-leaf herb and cilantro</p>
+      </div>
+
+
+      <div class="item" id="ramen">
+        <h3><span class="name">Ramen Solstice</span><span class="cost">12</span>
+          <button onclick="addItemToCartById('ramen')">Add To Cart</button>
+        </h3>
+        <input type="number" class="quantity" value="0"></input>
+        <p>brazil nut broth, wheat noodles, sliced pork, lacinato kale, napa cabbage, broccoli, mushroom, jalapeñogreen onion, dulse, nori, tofu, and  crispy krupuk</p> 
+      </div> 
+    
+    </div> <!--end soups div--> 
+  
+          
+    <br>
+    <div class="menu-col-group" id="salads"><!--salads div-->
+      <h2 id="salads">SALADS</h2><br>
+
+      <div class="item" id="norrito">
+        <h3><span class="name">Norrito (Living Food)</span><span class="cost">10</span>
+          <button onclick="addItemToCartById('norrito')">Add To Cart</button>
+        </h3>
+        <input type="number" class="quantity" value="0"></input>
+        <p>bed of nori, romaine, sprouts, cabbage, mint, carrot, jicama, avocado, bell pepper with lime leaf dressing and garnished with cilantro</p>
+      </div>
+
+    <div class="item" id="chinois">
+        <h3><span class="name">Chinois</span><span class="cost">13</span>
+          <button onclick="addItemToCartById('chinois')">Add To Cart</button>
+        </h3>
+        <input type="number" class="quantity" value="0"></input>
+        <p>soy chicken, napa and red cabbage, orange, carrot, wonton crisps, sliced brazil nuts, cilanscallions, gomasio sesame vinaigrette</p>
+    </div>
+  
+    <div class="clear item" id="kale">
+        <h3><span class="name">Kale (Living Food)</span><span class="cost">16</span>
+          <button onclick="addItemToCartById('kale')">Add To Cart</button>
+        </h3>
+        <input type="number" class="quantity" value="0"></input>
+        <p>mixed sea veggies, lacinato kale, housemade kimchi and onion tossed with spiced almonds in Au Lac's classic teriyaki dressing. topped with   cucumber ribbons and a cheesy kale crisp.</p> 
+    </div> 
+  </div><!--end salads div-->
+
+     
+  
+    <br>
+    <div class="menu-col-group" id="plates"><!--plates div-->
+      <h2 id="plates">PLATES</h2><br>
+      
+      <div class="item" id="banhmi">
+        <h3><span class="name">Mai Banh Mi</span><span class="cost">14</span>
+          <button onclick="addItemToCartById('banhmi')">Add To Cart</button>
+        </h3>
+        <input type="number" class="quantity" value="0"></input>
+        <p>Vietnamese-French baguette with shredded tofu and kelp noodles, pork roll, pickled daikon and carrot, vegan mayonnaise, housemade nut pate,  jalapeño, cucumber, cilantro, with a side salad.</p> 
+      </div>
+
+      <div class="item" id="eggplant">
+        <h3><span class="name">Eggplant Vermicelli</span><span class="cost">17</span>
+          <button onclick="addItemToCartById('eggplant')">Add To Cart</button>
+        </h3>
+        <input type="number" class="quantity" value="0"></input>
+        <p>soy chicken, napa and red cabbage, orange, carrot, wonton crisps, sliced brazil nuts, cilantro, scallions, gomasio sesame vinaigrette</p>
+      </div>
+
+      <div class="clear item" id="sweetsour">
+        <h3><span class="name">Sweet and Sour Soup</span><span class="cost">14</span>
+          <button onclick="addItemToCartById('sweetsour')">Add To Cart</button>
+        </h3>
+        <input type="number" class="quantity" value="0"></input>
+        <p>tamarind broth soup with rice paddy herb, pineapple, tomato, okra, taro stem, tofu, celery, bean sprouts. served with black rice.</p>
+      </div>
+
+      <div class="item" id="lemongrassfish">
+        <h3><span class="name">Lemongrass Fish</span><span class="cost">18</span>
+          <button onclick="addItemToCartById('lemongrassfish')">Add To Cart</button>
+        </h3>
+        <input type="number" class="quantity" value="0"></input>
+        <p>nori-wrapped soy fish seasoned with lemongrass and pan-seared chili. served with black rice, cucumber, tomato, pickled daikon and carrot, jalapeño, lime and a mixed veggies soup.</p>
+      </div>
+
+      <div class="item" id="garlicbasil">
+        <h3><span class="name">Garlic Basil</span><span class="cost">17</span>
+          <button onclick="addItemToCartById('garlicbasil')">Add To Cart</button>
+        </h3>
+        <input type="number" class="quantity" value="0"></input>
+        <p>rice noodles, apple sage soy sausage, baked garlic cloves, lacinato kale, pine nuts, nutritional yeast, spiced olive oil, garnished with fresh thai basil and non-gmo sriracha</p>
+      </div>
+    </div> <!--end plates div-->
+    
+
+    <br>
+    <div class="menu-col-group" id="desserts"><!--desserts div-->
+      <h2 id="desserts">DESSERTS</h2><br>
+
+      <div class="item" id="rainbow">
+        <h3><span class="name">Rainbow In The Sky</span><span class="cost">11</span>
+          <button onclick="addItemToCartById('rainbow')">Add To Cart</button>
+        </h3>
+        <input type="number" class="quantity" value="0"></input>
+        <p>Chilled pie with layers of blueberry, raspberry, coconut and spirulina over a moist crust of pecan and dates.</p>
+      </div>
+
+
+      <div class="item" id="choconut">
+        <h3><span class="name">Choconut X-tasy</span><span class="cost">12</span>
+          <button onclick="addItemToCartById('choconut')">Add To Cart</button>
+        </h3>
+        <input type="number" class="quantity" value="0"></input>
+        <p>Chilled pie with layers of raw cacao, coconut and macadamia, over a crust of cacao, coconut flakes and pecan.</p>
+      </div>
+
+      <div class="clear item" id="donut">
+        <h3><span class="name">Warm Donut Holes</span><span class="cost">9</span>
+          <button onclick="addItemToCartById('donut')">Add To Cart</button>
+        </h3>
+        <input type="number" class="quantity" value="0"></input>
+        <p>Warm macadamia and spirulina dough filled with liquid palm sugar. Coated in coconut powder.</p>
+      </div>
+
+      <div class="item" id="scotchpie">
+        <h3><span class="name">Scotch On The Rocks</span><span class="cost">17</span>
+          <button onclick="addItemToCartById('scotchpie')">Add To Cart</button>
+        </h3>
+        <input type="number" class="quantity" value="0"></input>
+        <p>Chilled pie with butterscotch-macadamia filling and a rocky walnut crust. Dotted with raspberry sauce.</p>
+      <div>
+
+      <div class="item" id="tirawmisu">
+        <h3><span class="name">Tirawmisu</span><span class="cost">10</span>
+          <button onclick="addItemToCartById('tirawmisu')">Add To Cart</button>
+        </h3>
+        <input type="number" class="quantity" value="0"></input>
+        <p>Inspired by the Italian dessert. Fluffed macadamia cheese, cinnamon, espresso, dark cacao, and maple syrup.</p>
+      </div>
+
+    </div><!--end desserts div-->
+    
+
+</div><!--END "DESKTOP-MENU-->
+
+
+<script type="text/javascript" src="js/online_ordering2.js"></script>
+
+</section>
+
+</body>
+</html>

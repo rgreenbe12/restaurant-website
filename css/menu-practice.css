@@ -1,0 +1,169 @@
+h1 {
+  text-align: center;
+}
+
+nav {
+margin-left: 0;
+padding-left: 0;
+text-align: center;
+}
+
+ul {
+	list-style-type: none;  /*test to see which values are necessary*/
+	margin-left: 0;
+	padding-left: 0;
+}
+
+li {
+	margin-left: 0;
+	padding-left: 0;
+	padding: 1em;
+  font-size: 1.5em;
+  background-color: orange;
+  border: 1px solid;
+}
+
+h2 {
+  text-align: center;
+}
+
+#showcartbutton {
+  position: fixed;
+  width: 120px;
+  height: 30px;
+  font-size: 1.3em;
+  background-color: red;
+  border: black solid 1px;
+  border-radius: 5px;
+}
+
+input[type=number]{
+  width: 40px;
+}
+
+#cart {
+  position: fixed;
+  display: none;
+  margin: 1px 140px;
+  border: black solid 2px;
+  border-radius: 3px;
+  min-width: 289px;
+  max-width: 30%;
+  height: auto;
+  background-color: yellow;
+}
+
+
+table {
+  width: 100%;
+}
+
+th {
+  /*height: 50px;*/
+  text-align: left;
+  width: 33%;
+}
+
+th, td, {
+  padding-left: 4%;
+}
+
+#totalordervalue {
+  text-align: right;
+
+}
+
+.cost {
+  margin-left: 60px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.back_to_top {
+  position: fixed;
+  padding: 1%;
+  margin: 400px 20px;
+  background-color: yellow;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 1.4em;
+  color: red;
+  text-decoration: underline;
+  index: 10;
+}
+
+.item button {
+  background-color: orange;
+  border-radius: 6px;
+  height: 30px;
+}
+
+@media screen and (min-width: 768px){
+.menu-col-group {
+    overflow: hidden;
+  }
+.menu-col-group > div {
+    float: left;
+    width: 50%;
+  }
+
+.clear {
+  	clear: left;
+  }
+
+nav li {
+  display: inline-block;
+  padding: 1em;
+  /*margin-right: 1em;*/
+  width: 5%;
+  margin: 3%;
+  font-size: 1.3em;
+  border: none;
+  background-color: white;
+}
+
+}
+
+/* @media screen and (min-width: 769px){
+
+ 	nav {
+ 		width: 55%;
+ 		margin: 0 auto;
+ 		background-color: pink;
+ 	}
+
+ 	ul {
+ 		margin: 0 auto;
+ 		text-align: center; // or width: 50%
+
+
+ 	}
+ 	
+ 	ul li {
+ 		display: inline-block;
+ 		padding: 1em;
+ 		width: 10%;
+ 		
+ 	}
+
+ 	a {
+ 		
+ 	}
+    
+ }*/
+
+ @media screen and (min-width: 1080px){
+
+ 	.menu-col-group > div {
+ 		width: 29%;
+    padding: 2%;
+ 	}
+
+ 	.clear {
+ 		clear: none;
+ 	}
+
+ }
+

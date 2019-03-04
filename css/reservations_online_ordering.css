@@ -1,0 +1,38 @@
+#delivery {
+	background-color: yellow;
+	
+}
+
+#reserve {
+	background-color: grey;
+	padding-top: 3%;
+}
+
+@media screen and (min-width: 768px){
+
+#reserve-delivery {
+	margin-top: 150px;
+	clear: both;
+	width: 80%;
+	margin: 0 auto;
+}
+
+#delivery {
+	padding: 4em;
+	width: 30%;
+	float: left;
+}
+
+
+#reserve {
+	padding: 4em;
+	width: 30%;
+	float: left;
+}
+
+#reserve p {
+	margin: 0 auto;
+}
+
+
+}

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+	
+	<link href="site.css" rel="stylesheet">
+	<!--following is for the reservations form-->
+	<link href="css/jquery-ui.min.css" rel="stylesheet">
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<!--<script src="js/airports.js"></script>-->
+	<!--end reservations form-->
+
+	<!--reservations script-->
+	<!--<script>
+	$(document).ready(function() {
+	$('#order-online').button({
+   	icons : {
+   			secondary : 'ui-icon-circle-arrow-e'
+   		}
+   	});
+   $('#day').datepicker({
+      minDate : 0,
+      maxDate : '+3m'
+   });
+   
+   $('#location').selectmenu({width : 200});
+   $('#people').selectmenu({width : 200});
+   $('#time').selectmenu({width : 200});
+   $('#next').button({
+   	icons : {
+   		secondary : 'ui-icon-circle-arrow-e'
+   	}
+   });
+}); // end ready
+</script> end reservations script-->
+
+<!--<style>
+
+.signup label.error {
+  font-size: 0.8em;
+  color: #F00;
+  font-weight: bold;
+  display: block;
+  margin-left: 215px;
+}
+
+.signup  input.error, .signup select.error  {
+  background: #FFA9B8;
+  border: 1px solid red;
+}
+
+</style>-->
+<!--following is js for validadtion-->
+<!--<script src="js/jquery-1.11.0.min.js"></script>-->
+<!--<script src="jquery_validate_plugin/jquery.validate.min.js"></script>-->
+<!--begin validation script-->
+<!--<script>
+$(document).ready(function() {
+ $('.signup').validate({
+   rules: {
+   	/*name {
+   		required: true
+   	},
+
+   	lastname: {
+   		required: true
+   	},*/
+
+     email: {
+        required: true,
+        email: true,
+     }
+     /*,
+
+     phonenumber: {
+     	required: true,
+
+     },
+
+     subject: {
+     	required: true
+     },
+     comments: {
+      	required: true
+   	 }*/
+
+   	}, //end rules
+   messages: {
+      email: {
+         required: "Please supply an e-mail address.",
+         email: "This is not a valid email address."
+       },
+
+       phonenumber: {
+       	required: "Please supply a phone number.",
+       	phonenumber: "Must be in the format (012) 345-6789"
+       },
+
+       subject: {
+       		required: "Please write something."
+       },
+
+       comments: {
+       		required: "Boo."
+   		}
+   	} //end messages
+
+  }); // end validate 
+}); // end ready
+</script>end validation script-->
+
+</head>
+
+<body>
+
+  <header>MY RESTAURANT</header>
+  <div id="navwrapper">
+  	<nav class="navmobile navdesktop">
+	  <ul>
+	    <li>Main</li>
+	    <li>About</li>
+	    <li>Menu</li>
+	    <li>Visit</li>
+	  </ul>
+    </nav>
+  </div> <!--end navwrapper-->
+ <div id="slideshow">
+ </div><!--end slideshow-->
+ <section id="about-container">
+ 	
+ 		<figure id="aboutfigure"> 
+ 			<img src="">AN IMAGE</img>
+ 		</figure>
+ 		
+ 		<div id="about">
+ 			<h3>ABOUT US</h3>
+ 			  <p>
+ 			  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum socii  natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellent  qu  eu, pretium quis, sem  
+ 			  </p>
+ 			  <p> Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo  rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cr  dapibus. 
+ 			  </p>
+ 		<div><!--end about div-->
+ 	
+ </section><!--end section-->
+
+
+<div id="history-press-location">
+ 		<div class="figurecontainer">
+ 			<figure class="image"></figure>
+ 			<caption>
+ 				<h4>Our history</h4>
+
+ 			<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+ 			</p>
+ 			</caption>
+ 		</div>
+ 		<div class="figurecontainer">
+ 			<figure class="image"></figure>
+ 			<caption>
+ 				<h4>Location1</h4>
+ 				<p>
+ 				Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+ 				</p>
+ 				<h4>Location2</h4>
+ 				Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+ 				</caption>
+ 		</div>
+ 		<div class="figurecontainer">
+ 			<figure class="image"></figure>
+ 			<caption>
+ 				<h4>Press</h4>
+ 				<p>"Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo."
+ 				</p>
+ 				<p>"Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus."
+ 				</p>
+ 			</caption>
+ 		</div>
+</div><!--end history-press-location-->
+
+
+<!--<section id="reserve-delivery">
+	<article id="delivery">
+		<h2 style="text-align: center">Order Online</h2>
+		<div>
+			<button id="order-online">Order Online</button>
+		</div>
+	</article>
+	
+
+	<article id="reserve">
+			<h2 style="text-align: center">Reserve a Table</h2>
+			<form>
+			  <div>
+			    <label for="day" class="label">Pick a Day</label>
+			    <input type="text" id="day" name="day">
+			  </div>
+
+			  <div>
+			    <label for="location" class="label">Pick Location</label>
+			    <select name="meal" id="location">
+			  		<option>Downtown LA</option>
+			  		<option>Orange County</option>
+			  	</select>
+			  </div>
+
+			  <div>
+			    <label for="people" class="label">How Many People</label>
+			    <select name="people" id="people">
+			  		<option>1</option>
+			  		<option>2</option>
+			  		<option>3</option>
+			  		<option>4</option>
+			  		<option>5</option>
+			  		<option>6</option>
+			  		<option>7</option>
+			  		<option>8</option>
+			  		<option>9 or more</option>
+			  	</select>
+			  </div>
+
+			  <div>
+			    <label for="time" class="label">How Many People</label>
+			    <select name="time" id="time">
+			  		<option>10 am</option>
+			  		<option>10:30 am</option>
+			  		<option>11: 00 am</option>
+			  		<option>11:30 am</option>
+			  		<option>12:00 pm</option>
+			  		<option>12:30pm</option>
+			  		<option>1:00pm</option>
+			  		<option>1:30pm</option>
+			  		<option>2:00pm</option>
+			  		<option>2:30 pm</option>
+			  		<option>3:00 pm</option>
+			  		<option>3:00 pm</option>
+			  		<option>3:30 pm</option>
+			  		<option>4:00 pm</option>
+			  		<option>4:30 pm</option>
+			  		<option>5:00pm</option>
+			  		<option>5:30pm</option>
+			  		<option>6:00pm</option>
+			  		<option>6:30pm</option>
+			  		<option>7:00pm</option>
+			  		<option>7:30pm</option>
+			  		<option>8:00pm</option>
+			  		<option>8:30pm</option>
+			  		<option>9:00pm</option>
+			  		<option>9:30pm</option>
+			  		<option>10:00pm</option>
+			  		<option>10:30pm</option>
+			  		<option>11:00pm</option>
+			  		<option>11:30pm</option>
+			  	</select>
+			  </div>
+			
+			  <div>
+				  <button id="next">Continue reservation process</button>
+			  </div>
+			</form>
+		</article>
+</section>end reserve-delivery-->
+
+<section id="menu"><!--MENU-->
+    <p><a href="menu-practice.html">MENU</a></p>
+</section>
+
+<!--<section id="press">
+	<figure id="pressfigure"></figure>
+	<div id="presstext">
+		<p>"One of the oldest all-vegan restaurants in the county remains the best." -&nbsp;<a target="_blank" href="http://www.ocweekly.com/bestof/2014/award/best-vegan-restaurant-1899998/">OC Weekly </a>(2014)</p><p>"Owner Mai Nguyen and chef Ito, fueled by a passion for healthful eating and an aesthetic for fine dining, have created one of the region’s best vegetarian experiences. It’s here that I discovered the real joys of vegan food—playful symphonies of textures, tastes, and visuals." - <a target="_blank" href="http://ww1.calif.aaa.com/westways/2012/07-08/Pages/bon-appetit-au-lac.aspx">Westways</a>&nbsp;(2012)</p><p>"It’s not easy to find such a glamorous vegan dining experience in L.A. that won’t break the bank. I love the raw curried rice and the salt and pepper yam 'shrimp'." - Dita Von Teese,&nbsp;<a target="_blank" href="http://www.theinfatuation.com/friday-fives/dita-von-teese">The Infatuation</a>&nbsp;(2016)</p><p>"Au Lac Restaurant in Fountain Valley has helped in the evolution of vegetarian cuisine from its days of bland blocks of tofu." -&nbsp;<a target="_blank" href="http://articles.latimes.com/2001/may/10/entertainment/ca-61528">Los Angeles Times</a>&nbsp;(2001)</p><p>"At Au Lac, that compassion manifests itself in the attention to detail that goes into every dish – and it’s something you can taste."&nbsp;-&nbsp;<a target="_blank" href="http://www.coastmagazine.com/articles/aulac-1867--.html">Coast Magazine</a>&nbsp;(2011)</p><p>"Everything here is vegetarian, but it makes no difference — the food is universally good." - District Greater Long Beach (2008)</p><p id="yui_3_17_2_1_1544764315997_152877">"Silent chef, healed owner make Au Lac a raw-vegan delight" -&nbsp;<a target="_blank" href="http://www.ocregister.com/articles/nguyen-594036-ito-diet.html">OC Register</a>&nbsp;(2013)</p><p>"9 Best Vietnamese Dishes in Los Angeles" - <a target="_blank" href="http://losangeles.cbslocal.com/top-lists/9-best-vietnamese-dishes-in-los-angeles/">CBS Los Angeles</a> (2016)</p><p>"Best Vegan Restaurant" -<a target="_blank" href="http://www.ocweekly.com/locations/au-lac-vegetarian-restaurant-96426/"> OC Weekly</a> (2008 &amp;&nbsp;2014)</p><p>"The Five Best Vegan-Friendly Restaurants in Orange County" - <a target="_blank" href="http://losangeles.cbslocal.com/top-lists/the-five-best-vegan-friendly-restaurants-in-orange-county/">CBS Los Angeles</a> (2012)</p><p>"Best Asian Food" - Orange Coast Magazine (2012)&nbsp;</p><p>Yelp Reviews (<a target="_blank" href="http://www.yelp.com/biz/au-lac-fountain-valley-2">FV</a> / <a target="_blank" href="http://www.yelp.com/biz/au-lac-dtla-los-angeles">LA</a>)</p><p>Facebook Reviews (<a target="_blank" href="https://www.facebook.com/aulacrestaurant/reviews">FV</a> /<a target="_blank" href="https://www.facebook.com/aulacdtla/reviews"> LA</a>)</p><p>Google Reviews (<a target="_blank" href="https://plus.google.com/114329749609983044316/about?hl=en&amp;gl=us">FV</a> / <a target="_blank" href="https://plus.google.com/116324648588692178041/about">LA</a>)</p>
+	</div>
+</section> end press-->
+
+<section id="visit">
+	<h2>VISIT</h2><br><br>
+<div id="location1">	
+<p>Âu Lạc FV<br>
+Plant-Based Foods</p>
+
+<p>16563 Brookhurst St.<br>
+Fountain Valley, CA 92708<br>
+714-418-0658</p>
+
+<p>For FV reservations, please call us at 714-418-0658.</p>
+
+<p>Lunch 11:33 AM - 3:33 PM<br>
+Dinner 5:33 PM - 9:33 PM<br>
+Closed Monday</p>
+
+<p>Private parking lot</p>
+</div>
+
+<div id="location2">
+
+<p>Plant-Based Food & Drink</p>
+
+<p>710 West 1st St<br>
+Los Angeles, CA 90012<br>
+213-617-2533</p>
+
+<p>For LA reservations, reserve via OpenTable.</p><br>
+
+<p>Monday - Thursday 12 PM - 10 PM<br>
+Friday - Sunday 12 PM - 11 PM</p>
+
+<p>Parking options:</p>
+
+<p>Validated parking entrance on 1st St (1st hour free; 2nd hour $1 with validation; $7 for the day)<br>
+Meters on 1st<br>
+Self parking on 1st & Beaudry (7 min walk)</p>
+</div>
+
+</section>
+
+<!--<section id="map-form">
+		<div class="map" id="map1">
+				<script type="text/javascript">
+					function initMap() {
+						var losangeles = {lat: 34.058648, lng: -118.280473};
+						var map = new google.maps.Map(document.getElementsByClassName('map')[0], {
+							zoom: 20,
+							center: losangeles,
+							styles: [
+							{ //TURNS OFF ALL MAP LABELS
+								"featureType": "all",
+								"elementType": "labels",
+								"stylers": [
+								{ "visibility": "off" }
+								]
+							},{ //MAKES LAND GREEN
+								"featureType": "land",
+								"stylers": [
+								{ "color": "#00ff00" }
+								]
+							},{ //MAKES WATER CYAN
+								"featureType": "water",
+								"stylers": [
+								{ "color": "#00aaff" }
+								]
+							},{ //MAKES ROADS WHITE
+								"featureType": "road",
+								"stylers": [
+								{ "color": "#ffffff" }
+								]
+							}
+							]
+						});
+
+						var marker = new google.maps.Marker({
+							position: losangeles,
+							map: map
+						});
+					}
+				</script>
+		
+				<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbGKvmAB5tXG60TZwiKBGvu6kpEccFyq0&callback=initMap"></script>
+		</div>
+
+		<div class="form" id="form1">
+				<h1>Signup</h1>
+			<form action="process.html" method="post" name="signup" class="signup">
+			<div>
+				<label for="name" class="label">Name </label>
+				<input name="name" type="text" class="required" id="name" title="Please type your name.">
+			</div>
+			<div>
+				<label for="lastname" class="label">Last Name </label>
+				<input name="lastname" type="text" class="required" id="lastname" title="Please type your last name.">
+			</div>
+			<div>
+				<label for="email" class="label">E-mail Address</label>
+				<input name="email" type="text" class="required" id="email">
+			</div>
+			<div>
+				<label for="phonenumber" class="label">Phone number</label>
+				<input name="phonenumber" type="text" cols="32" rows="1" class="required" id="phonenumber"></input>
+			</div>
+
+			<div>
+				<label for="subject" class="label">Subject</label>
+				<textarea name="subject" cols="32" rows="1" class="required" id="subject"></textarea>
+			</div>
+			<div>
+				<label for="comments" class="label">Comments</label>
+				<textarea name="comments" cols="32" rows="5" class="required" id="comments"></textarea>
+			</div>
+			<div>
+				<input type="submit" name="submit" id="submit" value="Submit"/>
+			</div>
+		</form>
+	</div>
+		
+
+		<div class="map" id="map2">
+
+		</div>
+
+		<div class="form" id="form2">
+				<h1>Signup</h1>
+			<form action="hello.html" method="post" name="signup" class="signup">
+			<div>
+				<label for="name" class="label">Name </label>
+				<input name="name" type="text" class="required" id="name2" title="Please type your name.">
+			</div>
+			<div>
+				<label for="lastname" class="label">Last Name </label>
+				<input name="lastname" type="text" class="required" id="lastname2" title="Please type your last name.">
+			</div>
+			<div>
+				<label for="email" class="label">E-mail Address</label>
+				<input name="email" type="text" class="required" id="email2">
+			</div>
+			<div>
+				<label for="phonenumber" class="label">Phone number</label>
+				<input name="phonenumber" type="text" cols="32" rows="1" class="required" id="phonenumber2"></input>
+			</div>
+
+			<div>
+				<label for="subject" class="label">Subject</label>
+				<textarea name="subject" cols="32" rows="1" class="required" id="subject2"></textarea>
+			</div>
+			<div>
+				<label for="comments" class="label">Comments</label>
+				<textarea name="comments" cols="32" rows="5" class="required" id="comments2"></textarea>
+			</div>
+			<div>
+				<input type="submit" name="submit2" id="submit2" value="Submit"/>
+			</div>
+		</form>
+	</div>
+
+</section>end map-form-->
+
+</section>
+
+<footer>
+</footer>
+
+</body>
+</html>

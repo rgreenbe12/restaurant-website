@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Form</title>
+	<link href="css/contact-map.css" rel="stylesheet">
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="jquery_validate_plugin/jquery.validate.min.js"></script>
+	<style>
+
+.signup label.error {
+  font-size: 0.8em;
+  color: #F00;
+  font-weight: bold;
+  display: block;
+  margin-left: 215px;
+}
+
+.signup  input.error, .signup select.error  {
+  background: #FFA9B8;
+  border: 1px solid red;
+}
+
+</style>
+
+
+<!--begin validation script-->
+<script>
+$(document).ready(function() {
+ $('.signup').validate({
+   rules: {
+   	/*name {
+   		required: true
+   	},
+
+   	lastname: {
+   		required: true
+   	},*/
+
+     email: {
+        required: true,
+        email: true,
+     }
+     /*,
+
+     phonenumber: {
+     	required: true,
+
+     },
+
+     subject: {
+     	required: true
+     },
+     comments: {
+      	required: true
+   	 }*/
+
+   	}, //end rules
+   messages: {
+      email: {
+         required: "Please supply an e-mail address.",
+         email: "This is not a valid email address."
+       },
+
+       phonenumber: {
+       	required: "Please supply a phone number.",
+       	phonenumber: "Must be in the format (012) 345-6789"
+       },
+
+       subject: {
+       		required: "Please write something."
+       },
+
+       comments: {
+       		required: "Boo."
+   		}
+   	} //end messages
+
+  }); // end validate 
+}); // end ready
+</script><!--end validation script-->
+
+</head>
+<body>
+
+<section id="map-form">
+		<div class="map" id="map1">
+				<script type="text/javascript">
+					function initMap() {
+						var losangeles = {lat: 34.058648, lng: -118.280473};
+						var map = new google.maps.Map(document.getElementsByClassName('map')[0], {
+							zoom: 20,
+							center: losangeles,
+							styles: [
+							{ //TURNS OFF ALL MAP LABELS
+								"featureType": "all",
+								"elementType": "labels",
+								"stylers": [
+								{ "visibility": "off" }
+								]
+							},{ //MAKES LAND GREEN
+								"featureType": "land",
+								"stylers": [
+								{ "color": "#00ff00" }
+								]
+							},{ //MAKES WATER CYAN
+								"featureType": "water",
+								"stylers": [
+								{ "color": "#00aaff" }
+								]
+							},{ //MAKES ROADS WHITE
+								"featureType": "road",
+								"stylers": [
+								{ "color": "#ffffff" }
+								]
+							}
+							]
+						});
+
+						var marker = new google.maps.Marker({
+							position: losangeles,
+							map: map
+						});
+					}
+				</script>
+		
+				<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbGKvmAB5tXG60TZwiKBGvu6kpEccFyq0&callback=initMap"></script>
+		</div><!--end map1-->
+		<div class="form" id="form1">
+				<h1>Signup</h1>
+			<form action="process.html" method="post" name="signup" class="signup">
+			<div>
+				<label for="name" class="label">Name </label>
+				<input name="name" type="text" class="required" id="name" title="Please type your name.">
+			</div>
+			<div>
+				<label for="lastname" class="label">Last Name </label>
+				<input name="lastname" type="text" class="required" id="lastname" title="Please type your last name.">
+			</div>
+			<div>
+				<label for="email" class="label">E-mail Address</label>
+				<input name="email" type="text" class="required" id="email">
+			</div>
+			<div>
+				<label for="phonenumber" class="label">Phone number</label>
+				<input name="phonenumber" type="text" cols="32" rows="1" class="required" id="phonenumber"></input>
+			</div>
+
+			<div>
+				<label for="subject" class="label">Subject</label>
+				<textarea name="subject" cols="32" rows="1" class="required" id="subject"></textarea>
+			</div>
+			<div>
+				<label for="comments" class="label">Comments</label>
+				<textarea name="comments" cols="32" rows="5" class="required" id="comments"></textarea>
+			</div>
+			<div>
+				<input type="submit" name="submit" id="submit" value="Submit"/>
+			</div>
+		</form>
+	</div>
+		
+
+		<div class="map" id="map2">
+
+		</div>
+
+		<div class="form" id="form2">
+				<h1>Signup</h1>
+			<form action="hello.html" method="post" name="signup" class="signup">
+			<div>
+				<label for="name" class="label">Name </label>
+				<input name="name" type="text" class="required" id="name2" title="Please type your name.">
+			</div>
+			<div>
+				<label for="lastname" class="label">Last Name </label>
+				<input name="lastname" type="text" class="required" id="lastname2" title="Please type your last name.">
+			</div>
+			<div>
+				<label for="email" class="label">E-mail Address</label>
+				<input name="email" type="text" class="required" id="email2">
+			</div>
+			<div>
+				<label for="phonenumber" class="label">Phone number</label>
+				<input name="phonenumber" type="text" cols="32" rows="1" class="required" id="phonenumber2"></input>
+			</div>
+
+			<div>
+				<label for="subject" class="label">Subject</label>
+				<textarea name="subject" cols="32" rows="1" class="required" id="subject2"></textarea>
+			</div>
+			<div>
+				<label for="comments" class="label">Comments</label>
+				<textarea name="comments" cols="32" rows="5" class="required" id="comments2"></textarea>
+			</div>
+			<div>
+				<input type="submit" name="submit2" id="submit2" value="Submit"/>
+			</div>
+		</form>
+	</div>
+
+</section><!--end map-form-->
+</body>
+</html>

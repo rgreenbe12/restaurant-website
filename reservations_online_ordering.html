@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reservations and Online Ordering</title>
+	<link href="css/reservations_online_ordering.css" rel="stylesheet">
+	
+	<link href="css/jquery-ui.min.css" rel="stylesheet">
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/airports.js"></script>
+	<!--reservations script-->
+	<script>
+	$(document).ready(function() {
+	$('#order-online').button({
+   	icons : {
+   			secondary : 'ui-icon-circle-arrow-e'
+   		}
+   	});
+   $('#day').datepicker({
+      minDate : 0,
+      maxDate : '+3m'
+   });
+   
+   $('#location').selectmenu({width : 200});
+   $('#people').selectmenu({width : 200});
+   $('#time').selectmenu({width : 200});
+   $('#next').button({
+   	icons : {
+   		secondary : 'ui-icon-circle-arrow-e'
+   	}
+   });
+}); // end ready
+</script><!--end reservations script-->
+
+<!--<link href="css/site.css" rel="stylesheet">-->
+</head>
+<body>
+<section id="reserve-delivery">
+	<article id="delivery">
+		<h2 style="text-align: center">Order Online</h2>
+		<div>
+			<button id="order-online">Order Online</button>
+		</div>
+	</article>
+	
+
+	<article id="reserve">
+			<h2 style="text-align: center">Reserve a Table</h2>
+			<form>
+			  <div>
+			    <label for="day" class="label">Pick a Day</label>
+			    <input type="text" id="day" name="day">
+			  </div>
+
+			  <div>
+			    <label for="location" class="label">Pick Location</label>
+			    <select name="meal" id="location">
+			  		<option>Downtown LA</option>
+			  		<option>Orange County</option>
+			  	</select>
+			  </div>
+
+			  <div>
+			    <label for="people" class="label">How Many People</label>
+			    <select name="people" id="people">
+			  		<option>1</option>
+			  		<option>2</option>
+			  		<option>3</option>
+			  		<option>4</option>
+			  		<option>5</option>
+			  		<option>6</option>
+			  		<option>7</option>
+			  		<option>8</option>
+			  		<option>9 or more</option>
+			  	</select>
+			  </div>
+
+			  <div>
+			    <label for="time" class="label">How Many People</label>
+			    <select name="time" id="time">
+			  		<option>10 am</option>
+			  		<option>10:30 am</option>
+			  		<option>11: 00 am</option>
+			  		<option>11:30 am</option>
+			  		<option>12:00 pm</option>
+			  		<option>12:30pm</option>
+			  		<option>1:00pm</option>
+			  		<option>1:30pm</option>
+			  		<option>2:00pm</option>
+			  		<option>2:30 pm</option>
+			  		<option>3:00 pm</option>
+			  		<option>3:00 pm</option>
+			  		<option>3:30 pm</option>
+			  		<option>4:00 pm</option>
+			  		<option>4:30 pm</option>
+			  		<option>5:00pm</option>
+			  		<option>5:30pm</option>
+			  		<option>6:00pm</option>
+			  		<option>6:30pm</option>
+			  		<option>7:00pm</option>
+			  		<option>7:30pm</option>
+			  		<option>8:00pm</option>
+			  		<option>8:30pm</option>
+			  		<option>9:00pm</option>
+			  		<option>9:30pm</option>
+			  		<option>10:00pm</option>
+			  		<option>10:30pm</option>
+			  		<option>11:00pm</option>
+			  		<option>11:30pm</option>
+			  	</select>
+			  </div>
+			
+			  <div>
+				  <button id="next">Continue reservation process</button>
+			  </div>
+			</form>
+		</article>
+</section><!--end reservations/online ordering-->
+</body>
+</html>
+
+
+

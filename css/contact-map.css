@@ -1,0 +1,55 @@
+.map {
+	height: 500px;
+	background-color: red;
+}
+
+.form {
+		background-color: pink;
+		height: 500px;
+}
+
+@media screen and (min-width: 768px){
+
+
+	#location1 {
+	float: left;
+	width: 50%;
+}
+
+#location2 {
+	float: right;
+	width: 50%;
+}
+
+#map-form {
+	margin-top:450px;
+	
+}
+#map1 {
+	width: 40%;
+	float: left;
+	margin: 2%;
+}
+#map2 {
+	width: 40%;
+	float: right;
+	margin: 2%;
+	position: relative;
+	top: -550px;
+}
+
+#form1 {
+	clear: both;
+	float: left;
+	width: 40%;
+	margin: 2%;
+}
+
+#form2 {
+	float: right;
+	width: 40%;
+	margin: 2%;
+	position: relative;
+	top: -550px;
+}
+}
